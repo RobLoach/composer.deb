@@ -1,0 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Composer
+Source: http://getcomposer.org
+
+Files: *
+Copyright: 2011, Nils Adermann
+           2011, Jordi Boggiano
+License: Expat

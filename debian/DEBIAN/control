@@ -1,0 +1,14 @@
+Source: composer
+Priority: extra
+Maintainer: Rob Loach <robloach@gmail.com>
+Homepage: http://getcomposer.org
+Package: composer
+Version: 1.0.0-alpha7
+Section: php
+Installed-Size: 9216
+Architecture: all
+Depends: php5
+Description: Dependency Manager for PHP.
+ Composer is a tool for dependency management in PHP. It allows you to declare
+ the dependent libraries your project needs and it will install them in your
+ project for you.
