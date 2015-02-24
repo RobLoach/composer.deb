@@ -3,10 +3,9 @@ VERSION=1.0.0-alpha9
 default: composer package
 
 composer: clean
-	@curl -sS https://getcomposer.org/installer | php
-	@php composer.phar create-project composer/composer -s alpha debian/usr/share/composer $(VERSION)$
+	@curl -sS https://getcomposer.org/installer | php -- --version=$(VERSION)$
 	@mkdir -p debian/usr/bin
-	@ln -sf ../share/composer/bin/composer debian/usr/bin/composer
+	@cp composer.phar debian/usr/bin/composer
 
 package:
 	@fakeroot make finish
