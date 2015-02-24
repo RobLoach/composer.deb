@@ -3,7 +3,7 @@ Priority: extra
 Maintainer: Rob Loach <robloach@gmail.com>
 Homepage: http://getcomposer.org
 Package: composer
-Version: 1.0.0-alpha7
+Version: 1.0.0-alpha9
 Section: php
 Installed-Size: 9216
 Architecture: all
