@@ -1,4 +1,4 @@
-VERSION=1.0.0-alpha9
+VERSION=1.0.0-alpha11
 
 default: composer package
 
