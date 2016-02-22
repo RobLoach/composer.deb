@@ -8,7 +8,7 @@ composer: clean
 	@cp composer.phar debian/usr/bin/composer
 
 package:
-	@sed -i "s/{{ VERSION }}/$(COMPOSER_VERSION)/g" debian/DEBIAN/control
+	@sed "s/{{ VERSION }}/$(COMPOSER_VERSION)/g" debian/DEBIAN/control.default > debian/DEBIAN/control
 	@fakeroot make finish
 
 finish:
