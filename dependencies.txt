@@ -1,0 +1,5 @@
+To build the package you will need :
+
+- build-essentials
+- curl
+- php5-cli
