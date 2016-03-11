@@ -20,17 +20,21 @@ Now that Composer is available, we can build the package:
 This will create our Debian package, which we can now interact with:
 ``` bash
 $ ln *.deb
-composer_1.0.0-alpha7_all.deb
-$ sudo dpkg --install composer_1.0.0-alpha7_all.deb
+composer_1.0.0-alpha11_all.deb
+$ sudo dpkg --install composer_1.0.0-alpha11_all.deb
+```
+
+If you want to use a different version of Composer you can override the `COMPOSER_VERSION` variable:
+``` bash
+$ COMPOSER_VERSION=1.0.0-alpha9 make composer
+$ COMPOSER_VERSION=1.0.0-alpha9 make package
 ```
 
 Development
 -----------
 
-When changing the target Composer version, make sure to update:
+When changing the default target Composer version, make sure to update:
 * Makefile
-* debian/DEBIAN/control
-
 
 About
 -----
